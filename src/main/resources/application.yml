@@ -2,9 +2,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://101.37.22.162:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://127.0.0.1:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
     username: root
-    password: Lzyll1234
+    password: root
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**Mapper.xml
   global-config:
@@ -16,7 +16,7 @@ mybatis-plus:
 shiro-redis:
   enabled: true
   redis-manager:
-    host: 101.37.22.162:6379
+    host: 127.0.0.1:6379
 
 lehteypzzz:
   jwt:
