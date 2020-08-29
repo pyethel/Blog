@@ -1,0 +1,25 @@
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://101.37.22.162:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: Lzyll1234
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+  global-config:
+    db-config:
+      # 配置逻辑删除
+      logic-delete-value: 1
+      logic-not-delete-value:
+
+shiro-redis:
+  enabled: true
+  redis-manager:
+    host: 101.37.22.162:6379
+
+lehteypzzz:
+  jwt:
+    secret: f4e2e52034348f86b67cde581c0f9eb5
+    expire: 604800
+    header: Authorization
